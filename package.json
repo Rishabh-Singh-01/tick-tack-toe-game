@@ -1,0 +1,20 @@
+{
+  "name": "tick-tack-toe",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "cleanup": "rmdir /q /s .parcel-cache dist|| echo 'no cached files'",
+    "build:dev": "npm run cleanup && parcel build src/index.html",
+    "start": "npm run cleanup && parcel serve src/index.html",
+    "watch": "parcel watch src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "parcel": "^2.10.3",
+    "typescript": "^5.3.3",
+    "url": "^0.11.3"
+  }
+}

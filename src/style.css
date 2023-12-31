@@ -1,0 +1,49 @@
+* {
+  font-family: 'Press Start 2P';
+  font-size: 24px;
+  color: #777;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root-container {
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  row-gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+#root-container > div {
+  margin: 0 auto;
+}
+
+.board-container {
+  display: inline-block;
+}
+.board-row {
+  display: flex;
+}
+
+.align-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.tile:hover {
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+.highlight {
+  font-weight: 500;
+  font-size: 28px;
+  color: #cc6083;
+}
